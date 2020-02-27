@@ -1,0 +1,58 @@
+﻿@model RSML_web_app.Models.ConfirmedDevicesInStore
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConfirmedDevicesInStore</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DeviceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeviceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastSeenDepartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastSeenDepartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastSeenTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastSeenTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

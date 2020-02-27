@@ -1,0 +1,82 @@
+﻿@model RSML_web_app.Models.Resolved
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resolved</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DeviceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeviceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThreatLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThreatLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeOccured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeOccured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeResolved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeResolved)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Verdict)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Verdict)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

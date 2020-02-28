@@ -33,5 +33,10 @@ namespace RSML_web_app.Controllers
         {
             return RedirectToAction("Index", "ConfirmedDevicesInStores");
         }
+
+        public ActionResult ValidStores()
+        {
+            return RedirectToAction("Index", "ValidStores");
+        }
     }
 }

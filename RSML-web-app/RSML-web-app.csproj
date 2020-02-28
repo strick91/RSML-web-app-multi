@@ -155,6 +155,8 @@
     <Compile Include="Controllers\ResolvedsController.cs" />
     <Compile Include="Controllers\Unresolveds1Controller.cs" />
     <Compile Include="Controllers\UnresolvedsController.cs" />
+    <Compile Include="Controllers\ValidStores1Controller.cs" />
+    <Compile Include="Controllers\ValidStoresController.cs" />
     <Compile Include="Data\RSML_web_appdbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -163,6 +165,7 @@
     <Compile Include="Models\ConfirmedDevicesInStore.cs" />
     <Compile Include="Models\Resolved.cs" />
     <Compile Include="Models\Unresolved.cs" />
+    <Compile Include="Models\ValidStores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +196,11 @@
     <Content Include="Views\ConfirmedDevicesInStores\Details.cshtml" />
     <Content Include="Views\ConfirmedDevicesInStores\Edit.cshtml" />
     <Content Include="Views\ConfirmedDevicesInStores\Index.cshtml" />
+    <Content Include="Views\ValidStores\Create.cshtml" />
+    <Content Include="Views\ValidStores\Delete.cshtml" />
+    <Content Include="Views\ValidStores\Details.cshtml" />
+    <Content Include="Views\ValidStores\Edit.cshtml" />
+    <Content Include="Views\ValidStores\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

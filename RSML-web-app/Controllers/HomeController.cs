@@ -38,5 +38,19 @@ namespace RSML_web_app.Controllers
         {
             return RedirectToAction("Index", "ValidStores");
         }
+
+        public ActionResult SignOut()
+        {
+            var authenticationManager = System.Web.HttpContext.Current.GetOwinContext().Authentication;
+            authenticationManager.SignOut();
+            Response.Redirect("/");
+            return View();
+        }
+
+        public ActionResult SignIn()
+        {
+            Response.Redirect("/Login.aspx");
+            return View();
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace RSML_web_app.Data
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
-        public RSML_web_appdbContext() : base("name=RSML_web_appdbContext")
+        public RSML_web_appdbContext() : base("name=DefaultConnection")
         {
         }
 

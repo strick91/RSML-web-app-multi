@@ -8,12 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using Microsoft.WindowsAzure.Scheduler.Models;
 using RSML_web_app.Data;
 using RSML_web_app.Models;
 
 namespace RSML_web_app.Controllers
 {
-    [Authorize]
+    //[Authorize (Users = "TeamMeijer")]
     public class Resolveds1Controller : ApiController
     {
         private RSML_web_appdbContext db = new RSML_web_appdbContext();

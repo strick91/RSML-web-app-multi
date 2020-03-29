@@ -17,6 +17,7 @@ namespace WebFormsIdentity
                 {
                     Response.Redirect("/");
                     StatusText.Text = string.Format("Hello {0}!!", User.Identity.GetUserName());
+                    Console.WriteLine(User.Identity.ToString());
                     LoginStatus.Visible = true;
                     LogoutButton.Visible = true;
                 }
@@ -29,6 +30,7 @@ namespace WebFormsIdentity
 
         protected void SignIn(object sender, EventArgs e)
         {
+            Console.WriteLine("IN SIGN IN FUNCTION");
             var userStore = new UserStore<IdentityUser>();
             var userManager = new UserManager<IdentityUser>(userStore);
             var user = userManager.Find(UserName.Text, Password.Text);

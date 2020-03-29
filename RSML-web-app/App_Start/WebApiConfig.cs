@@ -13,6 +13,7 @@ namespace RSML_web_app
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            //config.Filters.Add(new BasicAuthenticationAttribute());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

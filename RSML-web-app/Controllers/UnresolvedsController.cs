@@ -39,6 +39,7 @@ namespace RSML_web_app.Controllers
         // GET: Unresolveds/Create
         public ActionResult Create()
         {
+            System.Diagnostics.Debug.WriteLine("IN CREATE UNRESOLVED");
             return View();
         }
 

@@ -14,7 +14,7 @@ using RSML_web_app.Models;
 
 namespace RSML_web_app.Controllers
 {
-    //[Authorize (Users = "TeamMeijer")]
+    [BasicAuthentication]
     public class Resolveds1Controller : ApiController
     {
         private RSML_web_appdbContext db = new RSML_web_appdbContext();

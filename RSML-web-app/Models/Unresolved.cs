@@ -15,7 +15,7 @@ namespace RSML_web_app.Models
 
         public string _Date { get; set; }
 
-        public float TimeOccured { get; set; }
+        public double TimeOccured { get; set; }
 
         public int StoreNumber { get; set; }
 

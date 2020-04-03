@@ -24,26 +24,18 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Department, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.SuspiciousActivities, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Department, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Department, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.SuspiciousActivities, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SuspiciousActivities, "", new { @class = "text-danger" })
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.ThreatLevel, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model._Date, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.ThreatLevel, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.ThreatLevel, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.TimeOccured, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.TimeOccured, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.TimeOccured, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model._Date, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model._Date, "", new { @class = "text-danger" })
         </div>
     </div>
 

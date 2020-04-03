@@ -48,7 +48,7 @@ namespace RSML_web_app.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,DeviceId,Department,ThreatLevel,TimeOccured, StoreNumber, StoreName")] Unresolved unresolved)
+        public ActionResult Create([Bind(Include = "Id,DeviceId,SuspiciousActivities,_Date,TimeOccured, StoreNumber, StoreName")] Unresolved unresolved)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace RSML_web_app.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,DeviceId,Department,ThreatLevel,TimeOccured, StoreNumber, StoreName")] Unresolved unresolved)
+        public ActionResult Edit([Bind(Include = "Id,DeviceId,SuspiciousActivities,_Date,TimeOccured, StoreNumber, StoreName")] Unresolved unresolved)
         {
             if (ModelState.IsValid)
             {

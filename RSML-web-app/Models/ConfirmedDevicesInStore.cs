@@ -11,9 +11,13 @@ namespace RSML_web_app.Models
 
         public string DeviceId { get; set; }
 
+        public string SuspiciousActivities { get; set; }
+
+        public string ZoneHistory { get; set; }
+
         public string LastSeenDepartment { get; set; }
 
-        public DateTime LastSeenTime { get; set; }
+        public double LastSeenTime { get; set; }
 
         public int StoreNumber { get; set; }
 

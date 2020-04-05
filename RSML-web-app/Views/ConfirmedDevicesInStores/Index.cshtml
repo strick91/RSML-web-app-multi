@@ -15,6 +15,12 @@
             @Html.DisplayNameFor(model => model.DeviceId)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.SuspiciousActivities)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZoneHistory)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.LastSeenDepartment)
         </th>
         <th>
@@ -33,6 +39,12 @@
 <tr>
     <td>
         @Html.DisplayFor(modelItem => item.DeviceId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SuspiciousActivities)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ZoneHistory)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.LastSeenDepartment)

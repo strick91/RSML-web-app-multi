@@ -47,7 +47,7 @@ namespace RSML_web_app.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,DeviceId,LastSeenDepartment,LastSeenTime, StoreNumber, StoreName")] ConfirmedDevicesInStore confirmedDevicesInStore)
+        public ActionResult Create([Bind(Include = "Id,DeviceId,SuspiciousActivities,ZoneHistory,LastSeenDepartment,LastSeenTime, StoreNumber, StoreName")] ConfirmedDevicesInStore confirmedDevicesInStore)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace RSML_web_app.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,DeviceId,LastSeenDepartment,LastSeenTime, StoreNumber, StoreName")] ConfirmedDevicesInStore confirmedDevicesInStore)
+        public ActionResult Edit([Bind(Include = "Id,DeviceId,SuspiciousActivities,ZoneHistory,LastSeenDepartment,LastSeenTime, StoreNumber, StoreName")] ConfirmedDevicesInStore confirmedDevicesInStore)
         {
             if (ModelState.IsValid)
             {

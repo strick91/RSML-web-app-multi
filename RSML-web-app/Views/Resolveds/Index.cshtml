@@ -27,10 +27,10 @@
             @Html.DisplayNameFor(model => model.Verdict)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StoreNumber)
+            @Html.DisplayNameFor(model => model.StoreName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StoreName)
+            @Html.DisplayNameFor(model => model.StoreLocation)
         </th>
         <th></th>
     </tr>
@@ -53,10 +53,10 @@
         @Html.DisplayFor(modelItem => item.Verdict)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.StoreNumber)
+        @Html.DisplayFor(modelItem => item.StoreName)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.StoreName)
+        @Html.DisplayFor(modelItem => item.StoreLocation)
     </td>
     <td>
         @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

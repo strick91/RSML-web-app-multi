@@ -19,8 +19,8 @@ namespace RSML_web_app.Models
 
         public string Verdict { get; set; }
 
-        public int StoreNumber { get; set; }
-
         public string StoreName { get; set; }
+
+        public string StoreLocation { get; set; }
     }
 }
